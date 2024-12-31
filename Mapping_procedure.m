@@ -50,12 +50,12 @@ flag_save=0; flag_Gifsave=0; %Flags to save figures and GIFs.if 1-save; if 0-don
  F_data='bump72_Mp5_adjusted';squareSize =7.76; imval=3;%imval=3;%61.68 mm/8 downstream of bump
   
 %2-select number of images (first N images in the F_data Folder)
- 
+
 %3-set CHECKERBOARD square size in mm.
 
 
 files_list=dir( [F_data '\*.JPG']); 
-numImages =length(files_list); %should be at least 3. %'bump36_Mp3_07142021'
+numImages =length(files_list); %should be at least 3. 
 filenamevec=cell(1,numImages); %Preallocate Memory for Cell Array
 files = cell(1, numImages);
 for i = 1:numImages 
